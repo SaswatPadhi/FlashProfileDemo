@@ -1,0 +1,36 @@
+{
+  "Source": "http://stackoverflow.com/questions/33051147/normalize-different-date-data-into-single-format-in-python",
+  "PottersWheel": [
+    "ISpellWord",
+    "double",
+    "punct",
+    "double"
+  ],
+  "Results": [
+    {
+      "Description": [
+        "'December 1990'",
+        "TitleWord · [Space]{1} · [Digit]{2} · ',' · [Space]{1} · [Digit]{4}",
+        "[Digit]+ · [Punct]{1} · [Digit]{2} · [Punct]{1} · [Digit]+"
+      ]
+    },
+    {
+      "Disjuncts": 4,
+      "Description": [
+        "'12/31/1991'",
+        "'December 1990'",
+        "TitleWord · [Space]{1} · [Digit]{2} · ',' · [Space]{1} · [Digit]{4}",
+        "[Digit]{4} · '-' · [Digit]{2} · '-' · [Digit]{2}"
+      ]
+    }
+  ],
+  "Data": [
+    "12/31/1991",
+    "December 10, 1980",
+    "September 25, 1970",
+    "2005-11-14",
+    "December 1990",
+    "October 12, 2005",
+    "1993-06-26"
+  ]
+}

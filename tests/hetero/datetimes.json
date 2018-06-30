@@ -1,0 +1,19 @@
+{
+  "Source": "http://stackoverflow.com/questions/36827390/python-3-sorting-list-of-dates-in-string-format-in-different-form-with-time-a",
+  "PottersWheel": null,
+  "Results": [
+    {
+      "Description": [
+        "[Digit]{2} · '/1' · [Digit]{1} · '/201' · [Digit]{1}",
+        "[Digit]{2} · '/' · [Digit]{2} · '/201' · [Digit]{1} · ',' · [Space]{1} · [Digit]{2} · ':' · [Digit]{2}"
+      ]
+    }
+  ],
+  "Data": [
+    "11/04/2016, 23:55",
+    "15/11/2014",
+    "04/05/2016, 23:55",
+    "24/11/2013, 12:30",
+    "31/12/2015"
+  ]
+}

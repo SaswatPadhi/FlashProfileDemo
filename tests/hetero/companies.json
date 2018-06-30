@@ -1,0 +1,50 @@
+{
+  "Source": "https://dzone.com/articles/dirty-data-example-1-embedded-delimiters",
+  "PottersWheel": null,
+  "Results": [
+    {
+      "Description": [
+        "[Digit]{3} · [Space]{1} · [Upper]+ · [Alpha|Space]+",
+        "[Digit]{3} · [Space]{1} · [Digit]{2} · '/' · [Digit]{2} · '/2014'"
+      ]
+    },
+    {
+      "Disjuncts": 3,
+      "Description":[
+        "'2' · [Digit]{2} · [Space]{1} · [Upper]+ · [Lower]+ · [Space]{1} · [Alpha|Space]+",
+        "[Digit]{3} · [Space]{1} · [Digit]{2} · '/' · [Digit]{2} · '/2014'",
+        "[Digit]{3} · [Space]{1} · [Upper]{1} · [Alpha]+"
+      ]
+    },
+    {
+      "Disjuncts": 4,
+      "Description":[
+        "[Digit]{3} · [Space]{1} · [Digit]{2} · '/' · [Digit]{2} · '/2014'",
+        "'2' · [Digit]{2} · [Space]{1} · [Upper]+ · [Lower]+ · [Space]{1} · TitleWord",
+        "[Digit]{3} · [Space]{1} · [Upper]{1} · [Alpha]+",
+        "'208 Bank of America'"
+      ]
+    }
+
+  ],
+  "Data": [
+    "699 Equifax",
+    "589 Experian",
+    "551 TransUnion",
+    "288 10/06/2014",
+    "263 JPMorgan Chase",
+    "250 Citibank",
+    "247 10/01/2014",
+    "242 09/29/2014",
+    "240 09/22/2014",
+    "238 09/25/2014",
+    "218 10/03/2014",
+    "208 Bank of America",
+    "206 09/30/2014",
+    "206 09/24/2014",
+    "204 09/26/2014",
+    "201 Wells Fargo",
+    "194 10/02/2014",
+    "181 09/23/2014"
+  ]
+}

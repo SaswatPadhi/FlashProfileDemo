@@ -1,0 +1,42 @@
+{
+  "Source": "http://censusatschool.com/resources/datahandling/cleaning%20dirty%20data-worksheet.pdf",
+  "PottersWheel": [
+    "int"
+  ],
+  "Results": [
+    {
+      "Description": [
+        "'1' · [Digit]{2}",
+        "'20' · [Digit]{1}"
+      ]
+    },
+    {
+      "Disjuncts": 1,
+      "Description": [
+        "[Digit]{3}"
+      ]
+    }
+  ],
+  "Data": [
+    "157",
+    "146",
+    "140",
+    "200",
+    "165",
+    "149",
+    "209",
+    "152",
+    "150",
+    "150",
+    "127",
+    "165",
+    "145",
+    "162",
+    "164",
+    "180",
+    "158",
+    "178",
+    "176",
+    "110"
+  ]
+}
