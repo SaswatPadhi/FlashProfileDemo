@@ -2,6 +2,8 @@
 
 Our tool `FlashProfile` has been released as a C# module, called [`Matching.Text`][MText], within the publicly-available [PROSE] library from Microsoft. Note that, the source code for `FlashProfile` is _not_ publicly-available (also see the [PROSE License] for terms of use). However, our artifiact is a C# executable tool to examine the various claims made in our paper, which uses `Matching.Text` as a [NuGet] library dependency.
 
+**NOTE**: The `Matching.Text` implementation (and more generally `PROSE` framework) has been updated and improved since its release. However, the results claimed in our paper can be reproduced with `PROSE` version `2.2.0` from NuGet. Upgrading the `PROSE` dependency to a newer version may not compile, and may produce different results.
+
 ### Claims supported by the artifact
 - Working code for various examples of syntactic similarity over strings, and profiling examples, as demonstrated in our paper
 - Full datasets used for all profiling tasks, performance analysis and accuracy analysis of `FlashProfile`
