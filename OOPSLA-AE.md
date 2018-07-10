@@ -43,8 +43,8 @@ Each of the following `make` commands generates several logs in the `logs/` subd
 - `make perf-tests`: Test all 153 [profiling tasks](#profiling-tasks) over 75 publicly available datasets (see [test/](test/)), and measure profiling times (_&sect;5.3_)
   - _Est. Time:_ 30 mins, generates plots similar to _Fig.21_
 - Use the following commands to try the two examples from _&sect;5.4_:
-  - `dotnet run profile motivating_example.json`: (_Fig.22_)
-  - `dotnet run profile motivating_example.json`: (_Fig.23_)
+  - `dotnet run profile tests/hetero/us_canada_zip_codes.json`: (_Fig.22_)
+  - `dotnet run profile tests/hetero/primary_routes.json`: (_Fig.23_)
   - _Est. Time:_ 2 mins, prints profiles shown in _Fig.22, Fig. 23_
 
 

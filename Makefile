@@ -19,7 +19,7 @@ THETA_LIST = $(shell seq 1 0.25 3)
 CLUSTERING_RUNNER = $(RUNNER) clustering -e $(theta) -u $(mu)
 clustering:
 	@$(foreach mu, $(MU_LIST), $(foreach theta, $(THETA_LIST), $(CLUSTERING_RUNNER);))
-	@$(foreach mu, $(QMU_LIST), $(RUNNER) clustering -e 10 -u $(mu);)
+	@$(foreach mu, $(MU_LIST), $(RUNNER) clustering -e 10 -u $(mu);)
 	./python/plotting/clustering.py
 
 
