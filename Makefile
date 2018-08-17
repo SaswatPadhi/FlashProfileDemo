@@ -2,9 +2,12 @@ CONFIG = -c Release
 RUNNER = dotnet run $(CONFIG) --
 
 
-.PHONY: all init clustering quality tests similarity clean
+.PHONY: all init clustering quick-clustering quality tests similarity clean
 
-all: init clustering quality similarity tests
+
+all: init quality similarity tests clustering
+
+fast: init quality similarity tests quick-clustering
 
 
 init:
