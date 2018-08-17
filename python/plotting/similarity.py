@@ -57,6 +57,6 @@ for i, (auc, recall, precision) in enumerate(base_data):
 
 leg = p_auc.legend(['FlashProfile'] + sys.argv[1:], fontsize=15)
 
-plot_path = os.path.join(root_dir, 'plots', 'Fig.16(a)__Similarity.pdf')
+plot_path = os.path.join(root_dir, 'plots', 'Fig.17(a)__Similarity.pdf')
 pl.savefig(plot_path, bbox_inches='tight')
 print('> "Accuracy of Similarity Prediction" plot saved to %s' % plot_path)

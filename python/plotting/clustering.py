@@ -77,7 +77,7 @@ leg = p_nmi.legend(
     mus, title=u"String-Sampling Factor (\u03bc)", fontsize=20, ncol=2)
 leg.get_title().set_fontsize('22')
 
-plot_path = os.path.join(root_dir, 'plots', 'Fig.17__accuracy_sampling.pdf')
+plot_path = os.path.join(root_dir, 'plots', 'Fig.18__accuracy_sampling.pdf')
 pl.savefig(plot_path, bbox_inches='tight')
 print('> "Accuracy w.r.t Sampling" plot saved to %s' % plot_path)
 
@@ -123,7 +123,7 @@ leg = p_nmi.legend([m for m in mus if int(m) == m],
 leg.get_title().set_fontsize('20')
 
 plot_path = os.path.join(
-    root_dir, 'plots', 'Fig.20(a)__performance_sampling.pdf')
+    root_dir, 'plots', 'Fig.21(a)__performance_sampling.pdf')
 pl.savefig(plot_path, bbox_inches='tight')
 print('> "Profiling Time w.r.t Sampling" plot saved to %s' % plot_path)
 
@@ -156,6 +156,6 @@ p_nmi.xaxis.set_ticks(list(np.arange(0.75, 1.0, 0.1)) + [1])
 # leg.get_title().set_fontsize('22')
 
 plot_path = os.path.join(
-    root_dir, 'plots', 'Fig.20(b)__performance_vs_accuracy.pdf')
+    root_dir, 'plots', 'Fig.21(b)__performance_vs_accuracy.pdf')
 pl.savefig(plot_path, bbox_inches='tight')
 print('> "Performance ~ Accuracy Trade-off" plot saved to %s' % plot_path)

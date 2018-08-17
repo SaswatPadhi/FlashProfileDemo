@@ -117,6 +117,6 @@ sp.set_yticks([2**i for i in range(-9, 11, 2)])
 
 leg = sp.legend(['Automatic', 'Refinement'], fontsize=20)
 
-plot_path = os.path.join(root_dir, 'plots', 'Fig.21__time-vs-length.pdf')
+plot_path = os.path.join(root_dir, 'plots', 'Fig.22__time-vs-length.pdf')
 pl.savefig(plot_path, bbox_inches='tight')
 print('> "Profiling Time vs String Length" plot saved to %s' % plot_path)

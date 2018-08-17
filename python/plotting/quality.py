@@ -47,6 +47,6 @@ p.set_autoscale_on(False)
 p.axis([0, 62, 0, 1.005])
 p.xaxis.set_ticks(np.arange(0, 62, 5))
 
-plot_path = os.path.join(root_dir, 'plots', 'Fig.18__quality.pdf')
+plot_path = os.path.join(root_dir, 'plots', 'Fig.19__quality.pdf')
 pl.savefig(plot_path, bbox_inches='tight')
 print('> "Profiling Quality" plot saved to %s' % plot_path)

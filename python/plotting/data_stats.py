@@ -94,6 +94,6 @@ pl.gca().add_artist(leg)
 
 pl.subplots_adjust(hspace=0.06)
 
-plot_path = os.path.join(root_dir, 'plots', 'Fig.15__data_stats.pdf')
+plot_path = os.path.join(root_dir, 'plots', 'Fig.16__data_stats.pdf')
 pl.savefig(plot_path, bbox_inches='tight')
 print('> "Dataset Stats" plot saved to: %s' % plot_path)
