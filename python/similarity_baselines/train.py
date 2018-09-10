@@ -74,10 +74,10 @@ def main(args):
                         labels.append(0)
         sys.stdout.write('\r> Feature vector computation DONE.\n')
 
-        sys.stdout.write('\r+ Training ...')
+        sys.stdout.write('\r+ Training ... (%d data points)' % len(labels))
         sys.stdout.flush()
         model = RandomForestRegressor(random_state=SEED).fit(features, labels)
-        sys.stdout.write('\r> Training DONE.\n')
+        sys.stdout.write('\r> Training DONE (%d data points).\n')
 
         model_file = os.path.join(os.path.join(root_dir, 'logs'),
             'RandomForest.%d.%d.pkl' % (num_sim_pairs, num_dis_pairs))
@@ -90,8 +90,7 @@ if __name__ == '__main__':
 
     import argparse
     parser = argparse.ArgumentParser(prog='train')
-    parser.add_argument('sim-dis-combination', nargs='+',
-                        help='Comma-separated pairs')
+    parser.add_argument('sim-dis-combination', nargs='+', help='Comma-separated pairs')
     args = parser.parse_args()
     args.root_dir = root_dir
 

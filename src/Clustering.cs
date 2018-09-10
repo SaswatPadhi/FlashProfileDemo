@@ -60,7 +60,8 @@ namespace FlashProfileDemo {
                         file.WriteLine($"\n\n{separator}");
                         file.Flush();
 
-                        List<string> columns = Utils.Paths.CleanDatasets.OrderBy(s => rnd.Next()).Take(clusters).ToList();
+                        List<string> columns = Utils.Paths.CleanDatasets.Where(p => !p.EndsWith("aminos_cleaned.json"))
+				                    .OrderBy(s => rnd.Next()).Take(clusters).ToList();
                         List<List<string>> data = columns.Select(f => TestCase.LoadNonEmptyData(f).Distinct().OrderBy(s => rnd.Next())
                                                                               .Take(opts.NumStringsPerCluster).ToList()).ToList();
 

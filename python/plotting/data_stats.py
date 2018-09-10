@@ -31,11 +31,13 @@ def load_data_from(src):
             })
 
 
-print('> Loading all test cases: ...')
+print('> Loading all test cases ...')
 
 load_data_from('tests/hetero')
 load_data_from('tests/homo')
 load_data_from('tests/homo.simple')
+
+print('> Plotting the distribution of string length and of dataset size ...')
 
 data = sorted(data, key=itemgetter('strings'))
 
