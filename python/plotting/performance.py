@@ -5,6 +5,8 @@ import sys
 import xmltodict
 
 import numpy as np
+import matplotlib as mpl
+mpl.use('Agg')
 import matplotlib.pyplot as pl
 
 from jsonpath_rw import parse
@@ -90,8 +92,8 @@ sp.set_yticks([2**i for i in range(-9, 11, 2)])
 
 leg = sp.legend(['Automatic', 'Refinement'], fontsize=20)
 
-plot_path = os.path.join(root_dir, 'plots', 'Fig.21__time-vs-strings.pdf')
-pl.savefig(plot_path, bbox_inches='tight')
+plot_path = os.path.join(root_dir, 'plots', 'Fig.21__time-vs-strings.png')
+pl.savefig(plot_path, bbox_inches='tight', dpi=600)
 print('> "Profiling Time vs Dataset Size" plot saved to %s' % plot_path)
 
 
@@ -117,6 +119,6 @@ sp.set_yticks([2**i for i in range(-9, 11, 2)])
 
 leg = sp.legend(['Automatic', 'Refinement'], fontsize=20)
 
-plot_path = os.path.join(root_dir, 'plots', 'Fig.22__time-vs-length.pdf')
-pl.savefig(plot_path, bbox_inches='tight')
+plot_path = os.path.join(root_dir, 'plots', 'Fig.22__time-vs-length.png')
+pl.savefig(plot_path, bbox_inches='tight', dpi=600)
 print('> "Profiling Time vs String Length" plot saved to %s' % plot_path)

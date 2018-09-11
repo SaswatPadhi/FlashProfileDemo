@@ -52,4 +52,4 @@ perf-tests:
 
 
 clean:
-	rm -rf logs plots
+	rm -rf logs plots TestResult.xml
