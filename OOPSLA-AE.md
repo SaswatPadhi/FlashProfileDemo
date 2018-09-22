@@ -35,7 +35,8 @@ and it may produce values that differ from those shown in the paper.
 1. All commands mentioned in this file must be run at the root of the repository (`~/FlashProfileDemo/` in the VM).
 2. Make sure you run `make clean ; make init` once within the repo.
 
-Each of the following `make` commands generates several logs in the `logs/` subdirectory, and one or more plots in the `plots/` subdirectory.
+Each of the following `make` commands generates several logs in the `logs/` subdirectory,
+and one or more plots in the `plots/` subdirectory in PNG format.
 
 - `dotnet run profile motivating_example.json`: Run profiling tasks for our motivating example (_&sect;1: Fig.1(d), Fig.2(a), Fig.2(b)_)
   - _Est. Time:_ 1 min, prints the profiles
@@ -51,8 +52,6 @@ Each of the following `make` commands generates several logs in the `logs/` subd
   - _Est. Time:_ 15 mins, generates plots similar to _Fig.19_
 - `make perf-tests`: Test all 153 [profiling tasks](#profiling-tasks) over 75 publicly available datasets (see [tests/](tests/)), and measure profiling times (_&sect;5.3_)
   - _Est. Time:_ 30 mins, generates plots similar to _Fig.22_
-  - _NOTE:_ The default pdf reader in (L)Ubuntu, `evince`, does not render the generated plots correctly.  
-    Please use either `firefox` (set as default PDF reader for `nautilus` in the VM image) or `google-chrome`.
 - Use the following commands to try the two examples from _&sect;5.4_:
   - `dotnet run profile tests/hetero/us_canada_zip_codes.json`: (_Fig.23_)
   - `dotnet run profile tests/hetero/primary_routes.json`: (_Fig.24_)
